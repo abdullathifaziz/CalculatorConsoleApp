@@ -8,79 +8,66 @@ namespace CalculatorConsoleApp
         {
             Console.Title = "Aplikasi Kalkulator";
 
-            // int a = 10; // deklarasi a, dgn nilai 10;
-            // int b = 6; // deklarasi a, dgn nilai 6;
+            Console.WriteLine("+----------------------------+");
+            Console.WriteLine("|     APLIKASI KALKULATOR    |");
 
-            Console.WriteLine("Pilih Menu Kalkulator :");
+            Console.WriteLine("|                            |");
 
-            Console.WriteLine("");
+            Console.WriteLine("| 1. Penambahan              |");
+            Console.WriteLine("| 2. Pengurangan             |");
+            Console.WriteLine("| 3. Perkalian               |");
+            Console.WriteLine("| 4. Pembagian               |");
+            Console.WriteLine("+----------------------------+");
 
-            Console.WriteLine("1. Penambahan");
-            Console.WriteLine("2. Pengurangan");
-            Console.WriteLine("3. Perkalian");
-            Console.WriteLine("4. Pembagian");
-            
-            Console.WriteLine("");
-
-            Console.Write("Masukan Pilihan Anda : ");
+            Console.Write("| Masukan Pilihan Anda : ");
             int a, b;
             int pil = int.Parse(Console.ReadLine());
 
             switch (pil)
             {
                 case 1:
-                    Console.Write("Inputkan Nilai a = ");
+                    Console.Write("| Masukan Nilai a = ");
                     a = int.Parse(Console.ReadLine());
-                    Console.Write("Inputkan Nilai b = ");
+                    Console.Write("| Masukan Nilai b = ");
                     b = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    Console.WriteLine("Hasil Penambahan " + a + " + " + b + " = " + Penambahan(a, b));
+                    Console.WriteLine("+----------------------------+");
+                    Console.WriteLine("| Hasil Penambahan " + a + " + " + b + " = " + Penambahan(a, b));
+                    Console.WriteLine("+----------------------------+");
                     break;
                 case 2:
-                    Console.Write("Inputkan Nilai a = ");
+                    Console.Write("| Masukan Nilai a = ");
                     a = int.Parse(Console.ReadLine());
-                    Console.Write("Inputkan Nilai b = ");
+                    Console.Write("| Masukan Nilai b = ");
                     b = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    Console.WriteLine("Hasil Pengurangan {0} - {1} = {2}", a, b, Pengurangan(a, b));
+                    Console.WriteLine("+----------------------------+");
+                    Console.WriteLine("| Hasil Pengurangan {0} - {1} = {2}", a, b, Pengurangan(a, b));
+                    Console.WriteLine("+----------------------------+");
                     break;
                 case 3:
-                    Console.Write("Inputkan Nilai a = ");
+                    Console.Write("| Masukan Nilai a = ");
                     a = int.Parse(Console.ReadLine());
-                    Console.Write("Inputkan Nilai b = ");
+                    Console.Write("| Masukan Nilai b = ");
                     b = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    Console.WriteLine("Hasil Perkalian {0} * {1} = {2}", a, b, Perkalian(a, b));
+                    Console.WriteLine("+----------------------------+");
+                    Console.WriteLine("| Hasil Perkalian {0} * {1} = {2}", a, b, Perkalian(a, b));
+                    Console.WriteLine("+----------------------------+");
                     break;
                 case 4:
-                    Console.Write("Inputkan Nilai a = ");
+                    Console.Write("| Masukan Nilai a = ");
                     a = int.Parse(Console.ReadLine());
-                    Console.Write("Inputkan Nilai b = ");
+                    Console.Write("| Masukan Nilai b = ");
                     b = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    Console.WriteLine("Hasil Pembagian {0} / {1} = {2}", a, b, Pembagian(a, b));
+                    Console.WriteLine("+----------------------------+");
+                    Console.WriteLine("| Hasil Pembagian {0} / {1} = {2}", a, b, Pembagian(a, b));
+                    Console.WriteLine("+----------------------------+");
                     break;
                 default:
-                    Console.WriteLine("Maaf Masukan Pilihan Yang Benar");
+                    Console.WriteLine("| Maaf Masukan Pilihan Yang Benar");
                     break;
             }
 
-            Console.Write("");
 
-            //Console.Write("Inputkan Nilai a = ");
-            //int a = int.Parse(Console.ReadLine());
-
-            //Console.Write("Inputkan Nilai b = ");
-            //int b = Convert.ToInt32(Console.ReadLine());
-
-            //Console.WriteLine();
-
-            //Console.WriteLine("Hasil Penambahan " + a + " + " + b + " = " + Penambahan(a, b));
-            //Console.WriteLine("Hasil Pengurangan {0} - {1} = {2}", a, b, Pengurangan(a, b));
-            //Console.WriteLine("Hasil Perkalian {0} * {1} = {2}", a, b, Perkalian(a, b));
-            //Console.WriteLine("Hasil Pembagian {0} / {1} = {2}", a, b, Pembagian(a, b));
-
-            Console.WriteLine("\nTekan apa saja untuk keluar");
+            Console.WriteLine("\nTEKAN ENTER UNTU KELUAR");
             Console.ReadKey();
         }
 
